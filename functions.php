@@ -14,14 +14,15 @@ add_action('after_setup_theme', 'fbk_add_theme_support');
 
 function fbk_menus(){
   register_nav_menus( array(
-    'header-menu' => 'Menu im Kopfbereich der Seite',
+    'header-menu' => 'Menü im Kopfbereich der Seite',
+    'footer-menu' => 'Menü im Fußbereich der Seite'
   ));
 }
 
 add_action('init','fbk_menus');
 
 
-// add dropdown to navigation
+// add dropdown to header menu
 
 function add_dropdown_class_to_nav( $classes, $item, $args ) {
   if ( 'header-menu' === $args->theme_location ) {
