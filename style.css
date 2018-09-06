@@ -1,0 +1,133 @@
+/*
+Theme Name: FBK Brandenburg
+Description: Ein Theme für den Verein...
+Version. 0.1
+Author: Rosa und Jonas
+*/
+
+
+.navbar {
+  background-color: #12B7D5;
+  height: 80px;
+}
+
+.navbar-default .navbar-brand {
+    color: #F3F3E7;
+}
+
+.navbar-brand img {
+  position: absolute;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  top: -10px;
+  left: -50px;
+  width: 100px;
+}
+
+
+.navbar-default .navbar-nav li a {
+  color: #F3F3E7
+}
+
+.footer .navbar-nav li a {
+    color: #888;
+}
+
+.navbar-default .navbar-nav .dropdown-menu li a {
+  color: black;
+}
+
+#menu-hauptnavigation {
+    font-size: 16px;
+    margin-top: 28px;
+}
+
+#menu-hauptnavigation li:hover {
+  background-color: #e7e7e7
+}
+
+
+body {
+  background-color: white;
+}
+
+.wrapper {
+  width: 84vw;
+  min-height: 97vh;
+  margin: 3vh 8vw 0 8vw;
+  background-color: #f6ead0;
+  background-image: url("./images/paper.png");
+  background-repeat: repeat;
+  padding-bottom: 70px;
+}
+
+.footer {
+  height: 10px;
+  background-color: #F7F7F7;
+  border-top: 2px solid #888;
+}
+
+.paper-stack {
+  position: relative;
+  z-index: 0;
+  top: 4em;
+}
+.paper {
+  background: #fff;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+}
+
+.paper,
+.paper::before,
+.paper::after {
+  /* Styles to distinguish sheets from one another */
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+  border: 1px solid #bbb;
+}
+
+.paper::before,
+.paper::after {
+  content: "";
+  position: absolute;
+  height: 95%;
+  width: 99%;
+  background-color: #eee;
+}
+
+.paper::before {
+  right: 20px;
+  top: 0;
+  transform: rotate(-2deg);
+  z-index: -1;
+}
+
+.paper::after {
+  top: 10px;
+  right: -10px;
+  transform: rotate(2deg);
+  z-index: -2;
+}
+
+/* .paper::before {
+  right: -10px;
+  top: 10px;
+  transform: rotate(1deg);
+  z-index: -1;
+}
+
+.paper::after {
+  top: 20px;
+  right: -20px;
+  transform: rotate(2deg);
+  z-index: -2;
+} */
+
+.standard-page-content {
+  background-color: rgba(255,255,255,0.7);
+  padding: 2em;
+  margin-top: 2em;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.23), 0 6px 6px rgba(0,0,0,0.23);
+}
