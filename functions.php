@@ -47,7 +47,7 @@ add_filter( 'nav_menu_submenu_css_class', 'add_dropdown_class_to_submenu_nav', 1
 function add_dropdown_atts_to_menu_link( $atts, $item, $args ) {
     if( $args->theme_location == 'header-menu' ) {
    		if ( in_array( 'menu-item-has-children', $item->classes) ){
-        $atts['class'] = 'dropdown-toggle';
+        $atts['class'] = 'dropdown-toggle disabled';
     	  $atts['data-toggle'] = "dropdown";
     	  $atts['role'] = "button";
     	  $atts['aria-haspopup'] = "true";
