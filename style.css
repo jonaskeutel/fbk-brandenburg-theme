@@ -8,7 +8,7 @@ Author: Rosa und Jonas
 
 .navbar {
   background-color: #12B7D5;
-  height: 80px;
+  height: 120px;
 }
 
 .navbar-default .navbar-brand {
@@ -17,12 +17,12 @@ Author: Rosa und Jonas
 
 .navbar-brand img {
   position: absolute;
-  height: 100px;
+  height: 140px;
   margin: 0;
   padding: 0;
   top: -10px;
   left: -50px;
-  width: 100px;
+  width: 140px;
 }
 
 
@@ -38,9 +38,13 @@ Author: Rosa und Jonas
   color: black;
 }
 
+.navbar-default .navbar-nav li.dropdown:hover ul  {
+  display: block;
+}
+
 #menu-hauptnavigation {
     font-size: 16px;
-    margin-top: 28px;
+    margin-top: 69px;
 }
 
 #menu-hauptnavigation li:hover {
@@ -50,6 +54,7 @@ Author: Rosa und Jonas
 
 body {
   background-color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
 .wrapper {
@@ -78,6 +83,7 @@ body {
   padding: 30px;
   position: relative;
   text-align: center;
+  font-size: 18pt;
 }
 
 .paper,
