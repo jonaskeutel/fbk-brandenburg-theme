@@ -28,10 +28,13 @@
           </button>
           <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
             <?php if ( get_header_image() ) { ?>
-              <img src="<?php echo esc_url( get_header_image() ); ?>" alt="<?php echo esc_html( get_bloginfo('title') ); ?>" class="img-circle">
-            <?php } else {
-              bloginfo('title');
-            }?>
+              <img src="<?php echo esc_url( get_header_image() ); ?>" alt="<?php bloginfo('name'); ?>" class="img-circle">
+              <div class="website-subtitle"> <?php bloginfo('description'); ?> </div>
+            <?php } else { ?>
+              <?php bloginfo('name'); ?>
+              <br>
+              <?php bloginfo('description'); ?>
+            <?php } ?>
           </a>
         </div>
 
