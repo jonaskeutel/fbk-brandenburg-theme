@@ -53,9 +53,28 @@ Author: Rosa und Jonas
 }
 
 #menu-hauptnavigation li:hover {
-  background-color: #e7e7e7
+  background-color: #e7e7e7;
 }
 
+#menu-hauptnavigation li:hover a {
+  color: black !important;
+}
+
+.current-menu-item {
+  background-color: #e7e7e7;
+}
+
+.current-menu-item a {
+  color: black !important;
+}
+
+.current-menu-parent {
+  background-color: #e7e7e7;
+}
+
+.current-menu-parent a {
+  color: black !important;
+}
 
 body {
   background-color: white;
