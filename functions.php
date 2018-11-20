@@ -6,6 +6,8 @@
 function fbk_add_theme_support($value=''){
   add_theme_support('custom-header');
   add_theme_support('title-tag');
+  add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
+  add_theme_support( 'customize-selective-refresh-widgets' );
 }
 
 add_action('after_setup_theme', 'fbk_add_theme_support');

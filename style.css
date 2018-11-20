@@ -7,6 +7,7 @@ Author: Rosa und Jonas
 
 
 .navbar {
+  position: relative;
   background-color: #12B7D5;
   height: 120px;
 }
@@ -18,24 +19,22 @@ Author: Rosa und Jonas
 .navbar-brand img {
   position: absolute;
   height: 140px;
+  width: 140px;
   margin: 0;
   padding: 0;
   top: -10px;
   left: -50px;
-  width: 140px;
 }
 
 .website-subtitle{
-	padding: 69px 0px 0px 90px;
+	position: absolute;
+  bottom: 15px;
+  left: 100px;
 }
 
 
 .navbar-default .navbar-nav li a {
-  color: #F3F3E7
-}
-
-.footer .navbar-nav li a {
-    color: #888;
+  color: #F3F3E7;
 }
 
 .navbar-default .navbar-nav .dropdown-menu li a {
@@ -48,7 +47,9 @@ Author: Rosa und Jonas
 
 #menu-hauptnavigation {
     font-size: 16px;
-    margin-top: 69px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 #menu-hauptnavigation li:hover {
@@ -72,9 +73,34 @@ body {
 }
 
 .footer {
-  height: 10px;
+  color: #888;
+  height: 5vh;
+  width: 100vw;
   background-color: #F7F7F7;
   border-top: 2px solid #888;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+.footer .row div {
+  line-height: 5vh;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #888;
+}
+
+.footer-menu {
+  list-style: none;
+  float: right;
+}
+
+.footer-menu li {
+  float: left;
+  padding: 0 10px;
 }
 
 .paper-stack {
@@ -88,6 +114,7 @@ body {
   position: relative;
   text-align: center;
   font-size: 18pt;
+  margin: 0 20px;
 }
 
 .paper,
@@ -132,10 +159,9 @@ body {
 .landing-page-content {
 	background-color: rgba(255,255,255,0.7);
 	padding: 3.5em;
-	margin-top: 6em;
+	margin: 6em auto 0 auto;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.23), 0 6px 6px rgba(0,0,0,0.23);
 	width: 70%;
-	margin-left: 150px;
 	font-size: 18px;
 }
 
@@ -145,6 +171,79 @@ body {
 }
 
 .landing-page-website-description {
-  font-size: 30px;
+  font-size: 33px;
   padding-bottom: 10px;
+}
+
+/* Mobile Version */
+
+@media only screen and (max-width: 1024px) {
+  .website-subtitle{
+    bottom: 50px;
+    left: 120px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .wrapper {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding-bottom: 70px;
+  }
+
+  .website-subtitle{
+    bottom: 15px;
+    left: 120px;
+  }
+
+  .navbar-brand img {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    top: 10px;
+    left: 10px;
+  }
+
+  .landing-page-content {
+  	padding: 1.5em;
+  	width: 90%;
+  }
+
+  .standard-page-content {
+    margin: 2em 0 0 0;
+    padding: 1.5em;
+  }
+
+  #menu-hauptnavigation {
+    bottom: auto;
+    z-index: 100;
+    background-color: white;
+  }
+
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none;
+  }
+
+  #menu-hauptnavigation li {
+    padding-right: 5px;
+    min-width: 350px;
+  }
+
+  #menu-hauptnavigation li a{
+    color: black;
+  }
+
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #214D55;
+    height: 3px;
+  }
+
+  .navbar-toggle {
+    border: none;
+  }
+  
 }
