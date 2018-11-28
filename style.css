@@ -38,7 +38,7 @@ Author: Rosa und Jonas
 }
 
 .navbar-default .navbar-nav .dropdown-menu li a {
-  color: black;
+  color: #333;
 }
 
 .navbar-default .navbar-nav li.dropdown:hover ul  {
@@ -57,7 +57,7 @@ Author: Rosa und Jonas
 }
 
 #menu-hauptnavigation li:hover a {
-  color: black !important;
+  color: #333 !important;
 }
 
 .current-menu-item {
@@ -65,7 +65,7 @@ Author: Rosa und Jonas
 }
 
 .current-menu-item a {
-  color: black !important;
+  color: #333 !important;
 }
 
 .current-menu-parent {
@@ -73,12 +73,13 @@ Author: Rosa und Jonas
 }
 
 .current-menu-parent a {
-  color: black !important;
+  color: #333 !important;
 }
 
 body {
   background-color: white;
   font-family: 'Roboto', sans-serif;
+  color: #333;
 }
 
 .wrapper {
@@ -175,6 +176,11 @@ body {
   min-height: calc(97vh - 340px);
 }
 
+.download-page-content a {
+  color: #333;
+  line-height: 30px;
+}
+
 .landing-page-content {
 	background-color: rgba(255,255,255,0.7);
 	padding: 3.5em;
@@ -253,7 +259,7 @@ body {
   }
 
   #menu-hauptnavigation li a{
-    color: black;
+    color: #333;
   }
 
   .navbar-default .navbar-toggle .icon-bar {
