@@ -176,9 +176,16 @@ body {
   min-height: calc(97vh - 340px);
 }
 
-.download-page-content a {
+.wp-block-file {
+  margin-top: 1.5em;
+}
+
+.wp-block-file a {
   color: #333;
-  line-height: 30px;
+}
+
+.wp-block-file__button {
+  background-color: #12B7D5 !important;
 }
 
 .landing-page-content {
