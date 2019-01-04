@@ -1,6 +1,5 @@
 <?php
 
-
 // add theme support for custom elements
 
 function fbk_add_theme_support($value=''){
@@ -11,6 +10,13 @@ function fbk_add_theme_support($value=''){
 }
 
 add_action('after_setup_theme', 'fbk_add_theme_support');
+
+// inculde JavaScript files
+
+function my_js_scripts() {
+  wp_enqueue_script( 'index', get_template_directory_uri() . '/js/index.js', array ( 'jquery' ), true);
+}
+add_action( 'wp_enqueue_scripts', 'my_js_scripts' );
 
 // register the menus
 
