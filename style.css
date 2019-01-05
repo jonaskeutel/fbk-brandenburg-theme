@@ -1,7 +1,7 @@
 /*
 Theme Name: FBK Brandenburg Theme
 Description: Ein Theme für den Verein...
-Version: 1.5
+Version: 1.6
 Author: Rosa und Jonas
 */
 
@@ -79,6 +79,8 @@ Author: Rosa und Jonas
 body {
   background-color: white;
   font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
   color: #333;
 }
 
@@ -206,6 +208,22 @@ body {
   font-size: 33px;
   padding-bottom: 10px;
 }
+
+.wp-block-media-text {
+  margin-bottom: 10px;
+}
+
+.wp-block-media-text .wp-block-media-text__content {
+	padding-right: 0 !important;
+  padding-left: 3% !important;
+}
+
+.wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
+	padding-left: 0 !important;
+  padding-right: 3% !important;
+}
+
+
 
 /* Mobile Version */
 
