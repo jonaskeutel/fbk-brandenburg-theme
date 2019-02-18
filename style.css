@@ -86,8 +86,9 @@ body {
 
 .wrapper {
   width: 84vw;
+  max-width: 1400px;
   min-height: 97vh;
-  margin: 3vh 8vw 0 8vw;
+  margin: 3vh auto 0 auto;
   background-color: #f6ead0;
   background-image: url("./images/paper.png");
   background-repeat: repeat;
@@ -223,7 +224,20 @@ body {
   padding-right: 3% !important;
 }
 
+.wp-block-separator {
+  border-bottom: 2px solid lightgray;
+}
 
+.image-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.image-container figure {
+  width: 300px;
+}
 
 /* Mobile Version */
 
