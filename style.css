@@ -239,6 +239,10 @@ body {
   width: 300px;
 }
 
+.unvisible-link {
+  color: #333;
+}
+
 /* Mobile Version */
 
 @media only screen and (max-width: 1024px) {
