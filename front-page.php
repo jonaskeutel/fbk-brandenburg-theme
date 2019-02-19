@@ -22,7 +22,9 @@
           <?php the_content(); ?>
         </div>
       <?php endwhile; else: ?>
-        <p>Keine Beiträge gefunden</p>
+        <div class="landing-page-content">
+          <p>Entschuldigung. Auf dieser Seite, scheint der Inhalt zu fehlen. Wir arbeiten bestimmt schon an neuen Inhalten.</p>
+        </div>
       <?php endif; ?>
     </div>
     <div class="col-md-1"></div>

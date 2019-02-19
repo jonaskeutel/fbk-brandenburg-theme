@@ -1,17 +1,24 @@
 <?php get_header(); ?>
 
-<?php if(have_posts()) : while (have_posts()) : the_post(); ?>
   <div class="content container-fluid">
     <div class="row">
       <div class="col-md-1"></div>
       <div class="col-md-10">
-        <?php the_content(); ?>
+        <?php if(have_posts()) : while (have_posts()) : the_post(); ?>
+        <div class="standard-page-title">
+          <h2> <?php the_title(); ?> </h2>
+        </div>
+        <div class="standard-page-content">
+          <?php the_content(); ?>
+        </div>
+        <?php endwhile; else: ?>
+          <div class="standard-page-content">
+            <p>Entschuldigung. Auf dieser Seite, scheint der Inhalt zu fehlen. Wir arbeiten bestimmt schon an neuen Inhalten.</p>
+          </div>
+        <?php endif; ?>
       </div>
       <div class="col-md-1"></div>
     </div>
   </div>
-<?php endwhile; else: ?>
-  <p>Keine Beiträge gefunden</p>
-<?php endif; ?>
 
 <?php get_footer(); ?>
