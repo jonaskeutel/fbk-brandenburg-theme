@@ -171,6 +171,14 @@ body {
   z-index: -2;
 }
 
+.standard-page-title {
+  font-family: 'Amatic SC', cursive;
+}
+
+.standard-page-title h1 {
+  font-size: 50px;
+}
+
 .standard-page-content {
   background-color: rgba(255,255,255,0.7);
   padding: 2em;
