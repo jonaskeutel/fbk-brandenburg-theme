@@ -247,14 +247,18 @@ body {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-
 }
+
 .image-container figure {
   width: 300px;
 }
 
 .unvisible-link {
   color: #333;
+}
+
+.nf-field-element textarea{
+  resize: vertical;
 }
 
 /* Mobile Version */
