@@ -5,7 +5,7 @@
     <div class="col-md-1"></div>
     <div class="col-md-10">
       <div class="standard-page-title">
-        <h2> Entschuldigung! </h2>
+        <h1> Entschuldigung! </h1>
       </div>
       <div class="standard-page-content">
         Diese Seite können wir leider nicht finden. Da ist wohl etwas schief gegangen. Wir bitten um Entschuldigung.
