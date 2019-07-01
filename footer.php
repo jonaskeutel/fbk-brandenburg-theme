@@ -3,7 +3,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-3 hidden-xs hidden-sm">
-              <p> &copy; 2018, <a href="#">Rosa Braatz, Jonas Keutel</a></p>
+              <p> &copy; 2019, <a href="#">Rosa Braatz, Jonas Keutel</a></p>
           </div>
           <div class="col-md-6 hidden-xs col-sm-7">
             <p><strong> <?php  bloginfo('name'); ?> </strong></p>
