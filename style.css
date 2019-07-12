@@ -263,10 +263,27 @@ body {
 
 /* Mobile Version */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) and (min-width: 1024px) {
   .website-subtitle{
-    bottom: 50px;
-    left: 120px;
+    top: 135px;
+  }
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .website-subtitle{
+    top: 150px;
+    left: 10px;
+  }
+
+  .navbar-brand img {
+    position: absolute;
+    height: 155px;
+    width: 155px;
+    margin: 0;
+    padding: 0;
+    top: -15px;
+    left: -60px;
   }
 }
 
@@ -280,14 +297,14 @@ body {
   }
 
   .website-subtitle{
-    bottom: 15px;
-    left: 120px;
+    top: 90px;
+    left: 130px;
   }
 
   .navbar-brand img {
     position: absolute;
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
     margin: 0;
     padding: 0;
     top: 10px;
